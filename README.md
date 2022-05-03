@@ -11,25 +11,32 @@ It includes two process:
 2. Feature Scaling
 
 ## FEATURE ENCODING:
-1. Ordinal Encoding
-An ordinal encoding involves mapping each unique label to an integer value. This type of encoding is really only appropriate if there is a known relationship between the categories. This relationship does exist for some of the variables in our dataset, and ideally, this should be harnessed when preparing the data.
-2. Label Encoding
-Label encoding is a simple and straight forward approach. This converts each value in a categorical column into a numerical value. Each value in a categorical column is called Label.
-3. Binary Encoding
-Binary encoding converts a category into binary digits. Each binary digit creates one feature column. If there are n unique categories, then binary encoding results in the only log(base 2)ⁿ features.
-4. One Hot Encoding
-We use this categorical data encoding technique when the features are nominal(do not have any order). In one hot encoding, for each level of a categorical feature, we create a new variable. Each category is mapped with a binary variable containing either 0 or 1. Here, 0 represents the absence, and 1 represents the presence of that category.
+1. Ordinal Encoding  
+An ordinal encoding involves mapping each unique label to an integer value. This type of encoding is really only appropriate if there is a known relationship between the categories. This relationship does exist for some of the variables in our dataset, and ideally, this should be harnessed when preparing the data.  
+  
+2. Label Encoding  
+Label encoding is a simple and straight forward approach. This converts each value in a categorical column into a numerical value. Each value in a categorical column is called Label. 
+   
+3. Binary Encoding  
+Binary encoding converts a category into binary digits. Each binary digit creates one feature column. If there are n unique categories, then binary encoding results in the only log(base 2)ⁿ features.  
+
+4. One Hot Encoding  
+We use this categorical data encoding technique when the features are nominal(do not have any order). In one hot encoding, for each level of a categorical feature, we create a new variable. Each category is mapped with a binary variable containing either 0 or 1. Here, 0 represents the absence, and 1 represents the presence of that category.  
+
 
 ## FEATURE SCALING:
-1. Standard Scaler
+1. Standard Scaler  
 It is also called Z-score normalization. It calculates the z-score of each value and replaces the value with the calculated Z-score.
-The features are then rescaled with x̄ =0 and σ=1
-2. MinMaxScaler
-It is also referred to as Normalization. The features are scaled between 0 and 1. Here, the mean value remains same as in Standardization, that is, 0.
-3. Maximum absolute scaling
-Maximum absolute scaling scales the data to its maximum value; that is, it divides every observation by the maximum value of the variable.The result of the preceding transformation is a distribution in which the values vary approximately within the range of -1 to 1.
-4. RobustScaler
-RobustScaler transforms the feature vector by subtracting the median and then dividing by the interquartile range (75% value — 25% value).
+The features are then rescaled with x̄ =0 and σ=1  
+
+2. MinMaxScaler  
+It is also referred to as Normalization. The features are scaled between 0 and 1. Here, the mean value remains same as in Standardization, that is, 0.  
+
+3. Maximum absolute scaling  
+Maximum absolute scaling scales the data to its maximum value; that is, it divides every observation by the maximum value of the variable.The result of the preceding transformation is a distribution in which the values vary approximately within the range of -1 to 1.  
+
+4. RobustScaler  
+RobustScaler transforms the feature vector by subtracting the median and then dividing by the interquartile range (75% value — 25% value).  
 
  
 
